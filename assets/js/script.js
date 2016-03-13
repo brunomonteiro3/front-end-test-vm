@@ -27,15 +27,31 @@
 		$('body').toggleClass('show-menu');
 	});
 
-	// Slideshow
-
-	$('.area-slideshow').owlCarousel({
+	// Slideshow > Settings
+	var owlOptions = {
 		items: 1,
 		dots: true,
 		nav: true,
 		loop: true,
-		autoHeight: true
-	});
+		autoHeight: true,
+		onResized: newHeight
+	} 
+
+	// Slideshow > Applying the settings
+	$('.area-slideshow').owlCarousel(owlOptions);
+
+	// Slideshow > Recalculate height when window is resized
+	function owlResize($owl) {
+	    $owl.trigger('destroy.owl.carousel');
+	    $owl.html($owl.find('.owl-stage-outer').html()).removeClass('owl-loaded');
+	    $owl.owlCarousel(owlOptions);
+	}
+
+	// Slideshow > Rebuilding slideshow
+	function newHeight(event){
+		var owlElement = $('.area-slideshow').owlCarousel();
+		owlResize(owlElement);
+	};
 
 	// Image preview on card mock-up
 	function readURL(input) {
