@@ -1,0 +1,96 @@
+.area-articles
+	background: url(../images/general/area-articles/background-area.jpg) no-repeat top center
+	clear: both
+	overflow: hidden
+	margin-bottom: 65px
+
+	@media only screen and (max-width: 1024px)
+		background: none
+
+	.wrapper
+		@media only screen and (max-width: 1024px)
+			max-width: 610px
+
+	.content__title
+		color: #4bc076
+		font-size: 40px
+		font-weight: lighter
+		margin: 30px 0 35px
+
+		@media only screen and (max-width: 1024px)
+			text-align: center
+
+	.list-articles
+		max-width: 580px
+		width: 100%
+
+		&__item
+			background: #89d2a1
+			color: #FFF
+			display: block
+			width: 100%
+
+			&:nth-child(even)
+				background: #75c18e
+
+			a
+				color: #FFF
+
+			p
+				line-height: 1.4
+				font-size: 14px
+				margin-bottom: 15px
+
+		&__media
+			max-width: 190px
+			width: 100%
+			float: left
+
+			@media only screen and (max-width: 630px)
+				display: none
+
+			img
+				float: left
+				width: 100%
+
+		&__info
+			display: table
+			max-width: 390px
+			width: 100%
+			padding: 0 35px
+			height: 250px
+
+			@media only screen and (max-width: 630px)
+				max-width: 100%
+				height: auto
+				padding: 20px
+
+			.va
+				height: 100%
+				display: table-cell
+				vertical-align: middle
+
+		&__title
+			font-size: 22px
+			margin-bottom: 15px
+
+		&__more
+			font-size: 15px
+			text-decoration: underline
+
+		&__cta
+			background: url(../images/icons/ico-arrow-right-green.png) no-repeat right center
+			color: #5bc480
+			padding: 10px 0
+			font-size: 16px
+			margin: 40px 0 40px 40px
+			display: block
+			max-width: 320px
+			width: 100%
+
+			@media only screen and (max-width: 1024px)
+				margin: 40px auto 0
+
+			@media only screen and (max-width: 390px)
+				background: none
+				text-align: center

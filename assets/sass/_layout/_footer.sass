@@ -1,0 +1,157 @@
+.main-footer
+	margin-bottom: 35px
+	overflow: hidden
+
+	.wrapper	
+		@media only screen and (max-width: 1010px)
+			max-width: 745px
+	
+		@media only screen and (max-width: 760px)
+			max-width: 300px
+
+	.primary-area
+		max-width: 185px
+		width: 100%
+		float: left
+
+		.logo
+			display: block
+			max-width: 178px
+			width: 100%
+			height: 40px
+			
+			@media only screen and (max-width: 830px)
+				margin-bottom: 30px
+
+	.secondary-area
+		float: left
+		max-width: 760px
+		width: 100%
+	
+		@media only screen and (max-width: 1010px)
+			max-width: 530px
+	
+		@media only screen and (max-width: 830px)
+			max-width: 100%
+
+		&__column
+			max-width: 180px
+			width: 100%
+			float: left
+			margin: 0 0 15px 50px
+	
+			@media only screen and (max-width: 760px)
+				margin-left: 0
+
+			&--first				
+				@media only screen and (max-width: 830px)
+					margin-left: 0
+
+			&--last
+				max-width: 250px
+
+				.btn
+					float: left
+					font-size: 12px
+
+				.btn--primary
+					background: #f0f0f0
+					border-color: #f0f0f0
+					color: #75ad60
+					padding: 8px 0
+					text-align: center
+					max-width: 110px
+					width: 100%
+					margin-right: 10px
+
+					&:hover
+						background: #75ad60
+						border-color: #75ad60
+						color: #FFF
+
+						.ico--lock
+							background-position:  0 -14px
+
+					.ico--lock
+						display: inline-block
+						margin: 0 5px 0 0
+						position: relative
+						top: 2px
+
+				.btn--default
+					font-weight: bold
+					padding: 9px 0
+					text-align: center
+					max-width: 130px
+					width: 100%
+
+		&__item
+			display: block
+			margin-bottom: 15px
+
+			a
+				&:hover
+					text-decoration: underline
+
+		&__item-parent
+			font-size: 14px
+			color: #888
+
+		&__payment-methods
+			background: url(../images/icons/ico-cards.png) no-repeat
+			max-width: 175px
+			width: 100%
+			height: 33px
+			display: block
+
+		&__social
+			display: block
+			margin: 60px 0 0
+
+		&__social-item
+			float: left
+			margin-right: 5px
+
+		&__sub-title
+			font-size: 12px
+			color: #b8b7b7
+			margin: 0 0 15px
+
+		&__ico
+			width: 40px
+			height: 40px
+			text-indent: -9999em
+			float: left
+			background: url(../images/icons/ico-social.png) no-repeat
+
+			&.facebook
+				&:hover
+					background-position: 0 -40px
+
+			&.twitter
+				background-position: 0 -80px
+
+				&:hover
+					background-position: 0 -120px
+
+			&.instagram
+				background-position: 0 -160px
+
+				&:hover
+					background-position: 0 -200px
+
+			&.linkedin
+				background-position: 0 -240px
+
+				&:hover
+					background-position: 0 -280px
+
+		&__credits
+			display: block
+			font-size: 12px
+			clear: both
+			color: #AAA
+			margin: 0 0 0 50px
+
+			@media only screen and (max-width: 760px)
+				margin: 0

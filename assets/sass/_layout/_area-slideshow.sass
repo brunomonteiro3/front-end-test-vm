@@ -1,0 +1,147 @@
+.area-slideshow
+	@media only screen and (max-width: 845px)
+		padding-bottom: 30px
+		overflow: hidden
+
+	.centered
+		max-width: 750px
+		text-align: center
+
+		.area-slideshow__media
+			max-width: 710px
+
+		.btn--default,
+		.btn--secondary
+			margin: 0 auto 15px
+
+	&__image
+		@media only screen and (max-width: 845px)
+			margin-bottom: 15px
+
+	&__media
+		position: absolute
+		z-index: 10
+		color: #FFF
+		top: 50%
+		transform: translateY(-50%)
+		max-width: 450px
+		width: 100%
+	
+		@media only screen and (max-width: 845px)
+			position: relative
+			top: auto
+			transform: none
+			color: #888
+			text-align: center
+			max-width: 100%
+
+	&__title
+		font-size: 50px
+		margin-bottom: 15px
+		line-height: 1.1
+	
+		@media only screen and (max-width: 1050px)
+			font-size: 25px
+
+	&__description
+		font-size: 14px
+		line-height: 1.4
+		margin-bottom: 20px
+
+	.btn--default
+		font-weight: bold
+		font-size: 14px
+		margin-bottom: 15px
+
+		&:hover
+			border-color: #FFF
+
+	.btn--secondary
+		color: #FFF
+		text-decoration: underline
+	
+		@media only screen and (max-width: 845px)
+			color: #888
+
+	.btn--default,
+	.btn--secondary
+		max-width: 240px
+		width: 100%
+		text-align: center
+		display: block
+	
+		@media only screen and (max-width: 845px)
+			margin: 0 auto 15px
+
+.owl-controls
+	.owl-prev,
+	.owl-next
+		background: url(../images/icons/ico-arrow-next-prev.png) no-repeat
+		width: 55px
+		height: 56px
+		opacity: 0.5
+		text-indent: -9999em
+		position: absolute
+		top: 50%
+		margin-top: -27px
+
+		&:hover
+			opacity: 1
+	
+		@media only screen and (max-width: 1130px)
+			visibility: hidden
+
+	.owl-prev
+		left: 50px
+
+		@media only screen and (max-width: 1220px)
+			left: 15px
+
+	.owl-next
+		right: 50px
+		background-position: -55px 0
+
+		@media only screen and (max-width: 1220px)
+			right: 15px
+
+.owl-dots
+	position: absolute
+	left: 50%
+	margin-left: -30px
+	bottom: 30px
+
+	&:before
+		content: 'Descubra'
+		font-size: 24px
+		top: -45px
+		color: #FFF
+		left: -40px
+		padding-right: 35px
+		background: url(../images/icons/ico-arrow-down-white.png) no-repeat center right
+	
+		@media only screen and (max-width: 1150px)
+			display: none
+	
+	@media only screen and (max-width: 845px)
+		position: relative
+		bottom: auto
+
+	.owl-dot
+		float: left
+		margin-right: 10px
+		width: 12px
+		height: 12px
+		opacity: 0.5
+		background: #000
+		border-radius: 100%
+		position: relative
+
+		&.active
+			width: 16px
+			height: 16px
+			background: #FFF
+			opacity: 1
+			top: -2px
+	
+			@media only screen and (max-width: 845px)
+				border: 1px solid #7f7f7f
